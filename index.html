@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
-    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class ="title">
-        <h3>Rock-Paper-Scissors</h3>
+    <div class="container">
+        <h1>Rock-Paper-Scissors</h1>
+        <p class="instructions">Pick one to play against the computer:</p>
+        <div class="button-container">
+            <button onclick="play('rock')">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/047/433/686/small_2x/set-of-sharp-pointed-and-heavy-mineral-rocks-isolated-on-a-transparent-background-cutout-or-clipping-path-png.png" alt="Rock">
+                Rock
+            </button>
+            <button onclick="play('paper')">
+                <img src="https://cdn11.bigcommerce.com/s-2i5mq6440u/images/stencil/original/products/3762/9095/PlasticPaper-CutSheet__18809.1597757191.png?c=2" alt="Paper">
+                Paper
+            </button>
+            <button onclick="play('scissors')">
+                <img src="https://m.media-amazon.com/images/I/71hHJujMqRL.jpg" alt="Scissors">
+                Scissors
+            </button>
+        </div>
+        <div class="score-container">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
+        <div class="result-container">
+            <p id="result">Take your pick.</p>
+        </div>
+        <div class="reset-container">
+            <button id="reset-button" onclick="resetGame()">Reset Game</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
